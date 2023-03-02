@@ -10,12 +10,12 @@ const Home = () => {
           <img src={banner} alt="banner" className='mx-auto'/>
       </div>
       <div className='text-center mt-10'>
-          <h6 className='text-xl'>Welcome to</h6>
-          <h3 className='text-3xl'>Our Reminder</h3>
+          <h6 className='text-4xl'>Welcome to</h6>
+          <h3 className='text-6xl text-uppercase'>Our Reminder</h3>
           <p className='mt-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Interdum dictum tempus, interdum at dignissim metus. Ultricies sed nunc</p>
       </div>
       <div className='text-center mt-10'>
-          <Link to="/" className="btn text-white font-bold uppercase bg-gradient-to-r from-red-500 to-amber-500 border-none outline-none">Get Start</Link>
+          <Link to="/signUp" className="btn text-white font-bold uppercase bg-gradient-to-r from-red-500 to-amber-500 border-none outline-none">Get Start</Link>
       </div>
     </div>
   )
