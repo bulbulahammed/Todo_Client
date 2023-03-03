@@ -31,7 +31,7 @@ const Login = () => {
                 className="w-full max-w-xs text-center py-3 rounded text-white bg-gradient-to-r from-red-500 to-amber-500 focus:outline-none my-5"
               >Sign Up</button>
             </form>
-            <p className="text-xs">Don't Have An Account?<Link to="/signUp" className="text-secondary">Log In</Link></p>
+            <p className="text-xs">Don't Have An Account? <Link to="/signUp" className="text-secondary">Sign Up</Link></p>
           </div>
         </div>
       </div>
