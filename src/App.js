@@ -6,7 +6,7 @@ import Welcome from "./Pages/Welcome";
 
 function App() {
   return (
-    <div>
+    <div style={{fontFamily:"poppins"}}>
       <Routes>
         <Route path="/" element={<Welcome/>}/>
         <Route path="/signUp" element={<Signup/>}/>
