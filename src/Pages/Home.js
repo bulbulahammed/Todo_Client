@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import profile from "../assets/Img/profile.jpg";
 import Clock from '../components/clock/Clock';
 import "./home.css";
@@ -54,6 +55,73 @@ const Home = () => {
         <div className='text-center bg-slate-100 py-20'>
             <Clock/>
             <p className='text-3xl mt-5 story'>{greetings}</p>
+        </div>
+        {/* Todo Table */}
+        <div>
+          <h2>All Todos</h2>
+          <div className="overflow-x-auto">
+            <table className="table table-zebra w-full">
+                {/* head */}
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Date</th>
+                    <th>Task</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {/* row 1 */}
+                <tr>
+                    <th>
+                    <label>
+                        <input type="checkbox" className="checkbox" />
+                    </label>
+                    </th>
+                    <td>9/Mar/2023</td>
+                    <td><Link to="/task">Learn React</Link></td>
+                    <td>
+                    <div>
+                            <button className='btn btn-sm mr-1 btn-warning'>Edit</button>
+                            <button className='btn btn-sm ml-1 bg-red-600 border-none outline-none hover:bg-red-600'>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+                {/* row 2 */}
+                <tr>
+                <th>
+                    <label>
+                        <input type="checkbox" className="checkbox" />
+                    </label>
+                    </th>
+                    <td>10/Mar/2023</td>
+                    <td><Link to="/task"> Watch Movie</Link></td>
+                    <td>
+                    <div>
+                            <button className='btn btn-sm mr-1 btn-warning'>Edit</button>
+                            <button className='btn btn-sm ml-1 bg-red-600 border-none outline-none hover:bg-red-600'>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+                {/* row 3 */}
+                <tr>
+                <th>
+                    <label>
+                        <input type="checkbox" className="checkbox" />
+                    </label>
+                    </th>
+                    <td>11/Mar/2023</td>
+                    <td><Link to="/task">Submit Assignment</Link></td>
+                    <td>
+                        <div>
+                            <button className='btn btn-sm mr-1 btn-warning'>Edit</button>
+                            <button className='btn btn-sm ml-1 bg-red-600 border-none outline-none hover:bg-red-600'>Delete</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
         </div>
     </>
   )
